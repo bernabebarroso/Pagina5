@@ -1,0 +1,42 @@
+.container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.historyBox {
+  border-radius: 30px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstLine {
+  font-size: 60px;
+  font-weight: 700;
+  color: #f8eff1;
+}
+
+.secondLine {
+  margin-top: 15px;
+  font-size: 35px;
+  font-weight: 600;
+  color: #f8eff1;
+}
+
+@media (max-width: 1024px) {
+  .firstLine {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .firstLine {
+    margin-top: 100px;
+    text-align: center;
+  }
+}

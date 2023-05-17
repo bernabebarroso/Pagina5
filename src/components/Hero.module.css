@@ -1,0 +1,70 @@
+.heroBox {
+  opacity: 1;
+  background-color: rgb(24 24 27 / opacity);
+  height: 100vh;
+  position: relative;
+  top: 150px;
+  z-index: 1;
+}
+
+.animationTextHero {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.firstWord {
+  font-size: 40px;
+  font-weight: 500;
+  color: #f8eff1;
+}
+
+.secondWord {
+  font-size: 40px;
+  margin: auto;
+  font-weight: 500;
+  color: #f8eff1;
+}
+
+.thirdWord {
+  color: #c2ace6;
+  font-size: 60px;
+  margin: auto;
+  font-weight: 700;
+}
+
+.swiper {
+  width: 75%;
+  height: 500px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+  transition: visibility 1s, opacity 0.5s;
+}
+
+.swiperSlide {
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 1;
+  background-color: rgb(255 255 255 / opacity);
+  align-items: center;
+  justify-content: center;
+}
+
+.swiperSlide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .thirdWord {
+    font-size: 40px;
+  }
+}

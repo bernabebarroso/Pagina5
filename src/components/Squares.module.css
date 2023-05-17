@@ -1,0 +1,120 @@
+.container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxOneContainer,
+.boxTwoContainer,
+.boxThreeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8eff1;
+  margin-top: 30px;
+}
+
+.boxText {
+  display: flex;
+  text-align: center;
+  padding: 6px;
+  margin: 0px 12px;
+  color: #000;
+}
+
+.chipIcon,
+.cloudIcon,
+.dataBaseIcon {
+  width: 70px;
+  margin-top: 20px;
+  margin-left: 12px;
+  color: #f8eff1;
+  border-radius: 15px;
+}
+
+.boxNumber1,
+.boxNumber2,
+.boxNumber3 {
+  background-color: #c2ace6;
+  width: 350px;
+  height: 30vh;
+  border-radius: 10px;
+  margin-right: 20px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.boxNumber1:hover,
+.boxNumber2:hover,
+.boxNumber3:hover {
+  transform: scale(1.04);
+}
+
+.boxNumber1:not(:hover),
+.boxNumber2:not(:hover),
+.boxNumber3:not(:hover) {
+  transform: scale(1);
+}
+
+@media (max-width: 1024px) {
+  .boxText {
+    display: none;
+  }
+
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxNumber1,
+  .boxNumber2,
+  .boxNumber3 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .boxText {
+    display: none;
+  }
+
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxNumber1,
+  .boxNumber2,
+  .boxNumber3 {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxNumber1,
+  .boxNumber2,
+  .boxNumber3 {
+    margin-top: 40px;
+  }
+
+  .boxText {
+    display: none;
+  }
+}
